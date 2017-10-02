@@ -2,6 +2,7 @@ import countReducer from './reducers/countReducer';
 
 export default function createStore(reducer){
   let state;
+  let listeners;
 
   const dispatch = (action) => {
     state = reducer(state, action)
