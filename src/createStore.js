@@ -9,7 +9,10 @@ export default function createStore(reducer){
   dispatch({})
 
   const getState = () => {
-    return state
+    return state;
+  }
+  const subscribe = (listener) => {
+    listeners.push(listener)
   }
 
   return {
