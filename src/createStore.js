@@ -1,4 +1,4 @@
-import { countReducer } from reducers.countReducer;
+import countReducer from 'reducers/countReducer';
 
 export default function createStore(reducer){
   let state;
