@@ -9,6 +9,7 @@ export default function createStore(reducer){
   return {
     getState: getState,
     dispatch: dispatch,
+    subscribe: subscribe
   }
 }
 
