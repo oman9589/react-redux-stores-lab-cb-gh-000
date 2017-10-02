@@ -25,7 +25,7 @@ export default function createStore(reducer){
   }
 }
 
-const store = createStore(countReducer)
+const store = createStore(reducer)
 store.getState()
 store.dispatch({type: 'INCREMENT_COUNT'})
 store.getState()
