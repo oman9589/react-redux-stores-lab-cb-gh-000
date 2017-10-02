@@ -24,8 +24,3 @@ export default function createStore(reducer){
     subscribe: subscribe
   }
 }
-
-const store = createStore(reducer)
-store.getState()
-store.dispatch({type: 'INCREMENT_COUNT'})
-store.getState()
